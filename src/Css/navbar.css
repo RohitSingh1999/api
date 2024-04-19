@@ -1,0 +1,70 @@
+
+
+
+
+section .mega-menu {
+  display: block;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(
+    -100%
+  ); /* Start with a slight offset to create a sliding effect */
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  right: 0;
+  top: 90px;
+}
+
+section .hoverable {
+  position: static; /* Change from static to relative */
+}
+
+section .hoverable:hover .mega-menu {
+  opacity: 1;
+  transform: translateY(0); /* Slide down to its original position */
+  transition-delay: 0.3s;
+}
+.navbarmagzine{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Magazine+2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbarcalendar{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Calendars+2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbartalkshow{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Talkshow.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbartalwebitorials{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Webitorials.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbargallery{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/common/Gallery+bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbarmagzine2{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Magazine+1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.navbarcalendar2{
+  background-image: url('https://s3.amazonaws.com/wmh.all.posts/static_images/Navbar/Navbar+Calendars+1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Big+Shoulders+Display:wght@600&family=League+Gothic&family=Poppins:wght@200;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-gradient-custom {
+    background: linear-gradient(to bottom, black, white);
+    background-clip: text;
+    color: transparent;
+  }
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins";
+  overflow-x: hidden;
+  text-wrap: balance;
+  background-color: #000000;
+  color: #000000;
+}
+
+/* ClientEmail Page */
+
+.ClientMailimage {
+  background-image: url("https://s3.amazonaws.com/wmh.all.posts/static_images/client_email/Email.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* ClientEmail Page */
+
+/* contact page  */
+
+.contactimage1 {
+  background-image: url("https://s3.amazonaws.com/wmh.all.posts/static_images/contact_page/Contact+1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contactimage2 {
+  background-image: url("https://s3.amazonaws.com/wmh.all.posts/static_images/contact_page/Contact+2.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* contact page  */
+
+/* footer gradient */
+.footer-section {
+  background-image: url("https://s3.amazonaws.com/wmh.all.posts/static_images/footer/Footer.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* footer gradient */
+
+#style16::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#style16::-webkit-scrollbar
+{
+	width: 8px;
+	background-color:  #F5F5F5!important;
+}
+
+#style16::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #F5F5F5 !important;
+	background-image: -webkit-linear-gradient(top,
+  #f3468e,
+  #f3468e);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+#progress{
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  z-index: 2;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #161D27;
+}
+
+.gallery-section .gradient-opc {
+  position: relative;
+}
+
+.gallery-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 11%,
+    rgba(0, 0, 0, 0) 84%,
+    rgb(255, 255, 255) 100%
+  );
+  z-index: 1;
+}
+
+/*================gallery mosaic=================*/
+
+.add-text {
+  color: white;
+}
+.image-container:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+.image-container {
+  opacity: 0.4;
+}
+.text-div {
+  text-align: center;
+  margin: auto;
+}
+.pt-div {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  overflow: hidden;
+}
+.img-filter {
+  filter: grayscale(60%);
+}
+.image-container:hover .img-filter {
+  filter: saturate(200%);
+}
+/*================gallery mosaic=================*/
+
+/*================our brands section =================*/
+
+#logoMarqueeSection {
+  height: 60px;
+  position: relative;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+#logoMarqueeSection::before,
+#logoMarqueeSection::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    #000000 0%,
+    rgba(15, 204, 46, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+}
+#logoMarqueeSection::before {
+  left: 0;
+  top: 0;
+}
+#logoMarqueeSection::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.client-img:hover {
+  transform: scale(0.8);
+  opacity: 1.6;
+}
+
+#logoMarqueeSection {
+  margin: 0 auto;
+}
+
+.default-content-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0rem;
+  padding-right: 5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  width: 108%;
+  min-height: 30vh;
+}
+
+div.marquee > a > img {
+  height: 120px;
+}
+
+.logoMarqueeSection > div > div {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+.marquee-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  transform: translate3d(0%, 0, 0);
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee a {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 5.4rem;
+}
+
+.marquee-wrapper:hover .marquee {
+  animation-play-state: paused !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+
+
+
+  /* this css for pagination of fetch all data of posts */
+
+  #react-paginate ul {
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  #react-paginate li {
+    display: inline-block;
+    border: 1px solid #f3468e;
+    color: white;
+    cursor: pointer;
+    margin-right: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #react-paginate li a {
+      padding: 5px 10px;
+      display: inline-block;
+      outline: none;
+  }
+  #filters{
+    display: block;
+  }
+  #react-paginate li.active {
+    background: #f3468e;
+    outline: none;
+    
+  }
+
+
+
+
+  /* this css for gallery page css */
+  .new {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  #image-container {
+    flex-shrink: 0;
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    overflow: hidden;
+  
+  }
+  .image {
+    flex-shrink: 0;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    animation: move 15s linear infinite alternate;
+    user-select: none;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  @keyframes move {
+    0% {
+      transform: translatey(0);
+    }
+    100% {
+      transform: translatey(500%);
+    }
+  }
+  #image-container:nth-child(2) .image {
+    animation-direction: alternate-reverse;
+  }
+
+  
+  #image-container:hover .image {
+    animation-play-state: paused;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #image-container {
+     display: none;  
+    }
+  }
+
+
+/* Styles for screens with a width between 600px and 1200px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #image-container {
+    flex-shrink: 0;
+    width: 240px;
+  
+  }
+}
+
+
+
+
+/* this for latest magazine in home page */
+
+body {
+  --space: 2rem;
+
+}
+.marquees {
+  width:100%;
+  margin:auto;
+  --duration: 160s;
+  --gap: var(--space);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 8px;
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  animation: scroll var(--duration) linear infinite;
+}
+
+
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+
+

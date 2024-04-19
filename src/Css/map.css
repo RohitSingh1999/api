@@ -1,0 +1,30 @@
+.map-section svg {
+  width: 100%;
+  transition: all 1s;
+}
+.map-section .selected-country-class {
+  fill: #524c525b !important;
+  cursor: pointer;
+  transition: all 1s;
+}
+.map-section .selected-country-class:hover {
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 2;
+  width: 150%;
+}
+
+#talkname {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  opacity: 0;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-size: 1.5rem;
+
+}
+svg path {
+  cursor: pointer;
+}
+
