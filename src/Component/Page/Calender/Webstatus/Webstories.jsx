@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Heading from '../../Common/Heading';
-import FooterHeader from '../../Common/FooterCommon/FooterHeader';
+import Heading from '../../../Common/Heading';
+import FooterHeader from '../../../Common/FooterCommon/FooterHeader';
 // import ReactPaginate from "react-paginate";
 
 import './Webstories.css';

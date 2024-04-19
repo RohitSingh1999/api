@@ -13,7 +13,7 @@ import Faq from "./Component/Page/Webitorial/Faq";
 import Privacy from "./Component/Page/Policy/Privacy";
 import Gallery from "./Component/Page/Gallery/Gallery";
 import Talkshow from "./Component/Page/Talkshow/Talkshow";
-import Calender from "./Component/Page/Calender/Calender";
+
 import Magazine from "./Component/Page/Magazine/Magazine";
 import MapSVGComponent from "./Component/Page/Webitorial/Map";
 import GalleryPage from "./Component/Page/Gallery/GalleryPage";
@@ -32,7 +32,7 @@ import Webitorials from "./Component/SearchPages/Webitorials";
 import DefaultPage from "./Component/Common/DefaultPage";
 import CookiesBanner from "./CookiesBanner";
 import { useState } from "react";
-import Webstories from "./Component/Page/Calender/Webstories";
+import Webstories from "./Component/Page/Calender/Webstatus/Webstories";
 
 
 function App() {
